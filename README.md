@@ -11,3 +11,7 @@ MyBatis Parent
 MyBatis-Parent is the MyBatis parent POM which has to be inherited by all MyBatis modules.
 
 
+这个是mybatis中文注释版，clone下来配置一下数据库，直接跟进源码使用
+大家自取
+点点star不迷路
+

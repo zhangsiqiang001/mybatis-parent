@@ -11,7 +11,28 @@ MyBatis Parent
 MyBatis-Parent is the MyBatis parent POM which has to be inherited by all MyBatis modules.
 
 
-这个是mybatis中文注释版，clone下来配置一下数据库，直接跟进源码使用
-大家自取
-点点star不迷路
+这个是mybatis中文注释版
+1.配置数据库连接：sqlMapConfig.xml
+2.在mysql中初始化数据
+
+出处在：https://github.com/tuguangquan/mybatis.git
+
+大家自取 
+
+点点星星不迷路
+
+
+初始sql：
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `birthday` datetime NULL DEFAULT NULL,
+  `sex` varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+
+
 
